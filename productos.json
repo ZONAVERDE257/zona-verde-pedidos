@@ -1,32 +1,92 @@
 [
   {
+    "categoria": "Almuerzos",
+    "nombre": "Almuerzo con Salmón",
+    "descripcion": "Base a elección (patacón, puré, arroz de coco, quinua, pasta tomate o pesto), ensalada y salmón.",
+    "precio": 35000
+  },
+  {
+    "categoria": "Almuerzos",
+    "nombre": "Almuerzo con Atún",
+    "descripcion": "Base a elección, ensalada y atún.",
+    "precio": 37000
+  },
+  {
+    "categoria": "Almuerzos",
+    "nombre": "Almuerzo con Chuleta",
+    "descripcion": "Base a elección, ensalada y chuleta.",
+    "precio": 35000
+  },
+  {
+    "categoria": "Almuerzos",
+    "nombre": "Almuerzo con Pechuga",
+    "descripcion": "Base a elección, ensalada y pechuga.",
+    "precio": 25000
+  },
+  {
+    "categoria": "Almuerzos",
+    "nombre": "Almuerzo con Pollo y Jamón",
+    "descripcion": "Base a elección, ensalada y pollo con jamón.",
+    "precio": 25000
+  },
+  {
     "categoria": "Bowls",
-    "nombre": "Bowl Tropical",
-    "descripcion": "Arroz de coco o quinua, piña, mango, arándanos y verduras del día",
+    "nombre": "Bowl Tropical con Camarones",
+    "descripcion": "Arroz de coco o quinua con camarones, piña, mango, arándanos y verduras.",
     "precio": 37000
   },
   {
     "categoria": "Bowls",
+    "nombre": "Bowl Tropical con Pollo",
+    "descripcion": "Arroz de coco o quinua con pollo desmechado, piña, mango, arándanos y verduras.",
+    "precio": 30000
+  },
+  {
+    "categoria": "Bowls",
+    "nombre": "Bowl de Carne Desmechada",
+    "descripcion": "Arroz o quinua con patacón, guacamole, pico de gallo y verduras.",
+    "precio": 27000
+  },
+  {
+    "categoria": "Bowls",
     "nombre": "Bowl de Pollo Desmechado",
-    "descripcion": "Arroz o quinua, pollo desmechado, mango, verduras y frutos secos",
+    "descripcion": "Arroz o quinua con mango, verduras y frutos secos.",
     "precio": 25000
   },
   {
     "categoria": "Bowls",
     "nombre": "Bowl de Chuleta Ahumada",
-    "descripcion": "Arroz o quinua, chuleta ahumada en salsa de ciruela y verduras",
+    "descripcion": "Arroz o quinua con chuleta ahumada, maíz tierno, mango y verduras.",
     "precio": 38000
   },
   {
     "categoria": "Desayunos",
-    "nombre": "Tostada Integral",
-    "descripcion": "Con aguacate y huevo ponchado",
+    "nombre": "Waffle con Huevo Ponchado y Tocineta",
+    "descripcion": "Waffle de almidón de yuca con mézclum.",
+    "precio": 27000
+  },
+  {
+    "categoria": "Desayunos",
+    "nombre": "Tostada Integral con Aguacate",
+    "descripcion": "Con huevo cocido y balsámico.",
     "precio": 27000
   },
   {
     "categoria": "Helados",
     "nombre": "Waffle de Frutos Rojos",
-    "descripcion": "Con helado artesanal",
+    "descripcion": "Con una bola de helado.",
     "precio": 15000
+  },
+  {
+    "categoria": "Helados",
+    "nombre": "Waffle de Caramelo",
+    "descripcion": "Con una bola de helado.",
+    "precio": 15000
+  },
+  {
+    "categoria": "Helados",
+    "nombre": "Malteada",
+    "descripcion": "Sabores disponibles.",
+    "precio": 12000
   }
 ]
