@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zona Verde - Pedidos</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+    margin:0;
+}
+
+header{
+    background:#2E7D32;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+main{
+    max-width:700px;
+    background:white;
+    margin:25px auto;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+
+h2{
+    color:#2E7D32;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+    font-weight:bold;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-top:5px;
+}
+
+button{
+    width:100%;
+    background:#25D366;
+    color:white;
+    border:none;
+    padding:16px;
+    border-radius:10px;
+    font-size:18px;
+    margin-top:25px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1ebe5d;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🟢 ZONA VERDE</h1>
+
+<p>Felicidad Saludable</p>
+
+</header>
+
+<main>
+
+<h2>🍽️ Arma tu Almuerzo</h2>
+
+<label>Proteína</label>
+
+<select id="proteina">
+
+<option>Pechuga - $25.000</option>
+
+<option>Pollo y Jamón - $25.000</option>
+
+<option>Chuleta - $35.000</option>
+
+<option>Salmón - $35.000</option>
+
+<option>Atún - $37.000</option>
+
+</select>
+
+<label>Ensalada</label>
+
+<select id="ensalada">
+
+<option>Mixta (Frutas y Verduras)</option>
+
+<option>Ensalada de Vegetales</option>
+
+</select>
+
+<label>Base</label>
+
+<select id="base">
+
+<option>Patacón</option>
+
+<option>Puré</option>
+
+<option>Arroz de Coco</option>
+
+<option>Quinua</option>
+
+<option>Pasta</option>
+
+</select>
+
+<label>Nombre</label>
+
+<input id="nombre">
+
+<label>Dirección</label>
+
+<input id="direccion">
+
+<label>Torre / Oficina / Apartamento</label>
+
+<input id="oficina">
+
+<label>Teléfono</label>
+
+<input id="telefono">
+
+<button onclick="enviar()">
+
+📲 Enviar Pedido
+
+</button>
+
+</main>
+
+<script>
+
+function enviar(){
+
+let mensaje="Hola, quiero hacer un pedido.%0A%0A";
+
+mensaje+="Proteína: "+document.getElementById("proteina").value+"%0A";
+
+mensaje+="Ensalada: "+document.getElementById("ensalada").value+"%0A";
+
+mensaje+="Base: "+document.getElementById("base").value+"%0A%0A";
+
+mensaje+="Nombre: "+document.getElementById("nombre").value+"%0A";
+
+mensaje+="Dirección: "+document.getElementById("direccion").value+"%0A";
+
+mensaje+="Torre/Oficina/Apartamento: "+document.getElementById("oficina").value+"%0A";
+
+mensaje+="Teléfono: "+document.getElementById("telefono").value;
+
+window.open("https://wa.me/573128273739?text="+mensaje);
+
+}
+
+</script>
+
+</body>
+</html>
