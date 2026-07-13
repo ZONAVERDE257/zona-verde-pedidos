@@ -1,1 +1,32 @@
-
+[
+  {
+    "categoria": "Bowls",
+    "nombre": "Bowl Tropical",
+    "descripcion": "Arroz de coco o quinua, piña, mango, arándanos y verduras del día",
+    "precio": 37000
+  },
+  {
+    "categoria": "Bowls",
+    "nombre": "Bowl de Pollo Desmechado",
+    "descripcion": "Arroz o quinua, pollo desmechado, mango, verduras y frutos secos",
+    "precio": 25000
+  },
+  {
+    "categoria": "Bowls",
+    "nombre": "Bowl de Chuleta Ahumada",
+    "descripcion": "Arroz o quinua, chuleta ahumada en salsa de ciruela y verduras",
+    "precio": 38000
+  },
+  {
+    "categoria": "Desayunos",
+    "nombre": "Tostada Integral",
+    "descripcion": "Con aguacate y huevo ponchado",
+    "precio": 27000
+  },
+  {
+    "categoria": "Helados",
+    "nombre": "Waffle de Frutos Rojos",
+    "descripcion": "Con helado artesanal",
+    "precio": 15000
+  }
+]
