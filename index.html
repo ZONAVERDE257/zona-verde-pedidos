@@ -3,173 +3,93 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zona Verde - Pedidos</title>
 
-<style>
-body{
-    font-family:Arial,sans-serif;
-    background:#f5f5f5;
-    margin:0;
-}
+<title>ZONA VERDE | Felicidad Saludable</title>
 
-header{
-    background:#2E7D32;
-    color:white;
-    text-align:center;
-    padding:25px;
-}
-
-main{
-    max-width:700px;
-    background:white;
-    margin:25px auto;
-    padding:20px;
-    border-radius:12px;
-    box-shadow:0 0 10px rgba(0,0,0,.15);
-}
-
-h2{
-    color:#2E7D32;
-}
-
-label{
-    display:block;
-    margin-top:12px;
-    font-weight:bold;
-}
-
-input,select,textarea{
-    width:100%;
-    padding:10px;
-    border:1px solid #ccc;
-    border-radius:8px;
-    margin-top:5px;
-}
-
-button{
-    width:100%;
-    background:#25D366;
-    color:white;
-    border:none;
-    padding:16px;
-    border-radius:10px;
-    font-size:18px;
-    margin-top:25px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#1ebe5d;
-}
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-
-<h1>🟢 ZONA VERDE</h1>
-
-<p>Felicidad Saludable</p>
-
+<h1>🥗 ZONA VERDE</h1>
+<h2>Felicidad Saludable</h2>
+<p>Alimentación fresca y saludable</p>
 </header>
 
-<main>
 
-<h2>🍽️ Arma tu Almuerzo</h2>
+<section>
 
-<label>Proteína</label>
+<h2>🥗 Bowls</h2>
 
-<select id="proteina">
+<div class="producto">
+<h3>Bowl Tropical</h3>
+<p>Arroz de coco o quinua, piña, mango, arándanos y verduras del día</p>
+<strong>$37.000</strong>
+</div>
 
-<option>Pechuga - $25.000</option>
 
-<option>Pollo y Jamón - $25.000</option>
+<div class="producto">
+<h3>Bowl de Pollo Desmechado</h3>
+<p>Arroz o quinua, pollo desmechado, mango, verduras y frutos secos</p>
+<strong>$25.000</strong>
+</div>
 
-<option>Chuleta - $35.000</option>
 
-<option>Salmón - $35.000</option>
+<div class="producto">
+<h3>Bowl de Chuleta Ahumada en Salsa de Ciruela</h3>
+<p>Arroz o quinua, chuleta ahumada, maíz tierno, mango y verduras</p>
+<strong>$38.000</strong>
+</div>
 
-<option>Atún - $37.000</option>
 
-</select>
+</section>
 
-<label>Ensalada</label>
 
-<select id="ensalada">
+<section>
 
-<option>Mixta (Frutas y Verduras)</option>
+<h2>🍳 Desayunos</h2>
 
-<option>Ensalada de Vegetales</option>
+<div class="producto">
+<h3>Waffle de almidón de yuca con huevo ponchado y tocineta</h3>
+<p>Waffle artesanal con mézclum fresco</p>
+<strong>$27.000</strong>
+</div>
 
-</select>
 
-<label>Base</label>
+<div class="producto">
+<h3>Tostada integral con aguacate y huevo ponchado</h3>
+<p>Con balsámico y vegetales frescos</p>
+<strong>$27.000</strong>
+</div>
 
-<select id="base">
+</section>
 
-<option>Patacón</option>
 
-<option>Puré</option>
+<section>
 
-<option>Arroz de Coco</option>
+<h2>🍦 Helados</h2>
 
-<option>Quinua</option>
+<div class="producto">
+<h3>Waffle de frutos rojos y helado</h3>
+<p>Waffle acompañado con helado</p>
+<strong>$15.000</strong>
+</div>
 
-<option>Pasta</option>
 
-</select>
+<div class="producto">
+<h3>Malteadas</h3>
+<p>Sabores disponibles</p>
+<strong>$12.000</strong>
+</div>
 
-<label>Nombre</label>
+</section>
 
-<input id="nombre">
 
-<label>Dirección</label>
+<footer>
+<p>© ZONA VERDE - Felicidad Saludable</p>
+</footer>
 
-<input id="direccion">
-
-<label>Torre / Oficina / Apartamento</label>
-
-<input id="oficina">
-
-<label>Teléfono</label>
-
-<input id="telefono">
-
-<button onclick="enviar()">
-
-📲 Enviar Pedido
-
-</button>
-
-</main>
-
-<script>
-
-function enviar(){
-
-let mensaje="Hola, quiero hacer un pedido.%0A%0A";
-
-mensaje+="Proteína: "+document.getElementById("proteina").value+"%0A";
-
-mensaje+="Ensalada: "+document.getElementById("ensalada").value+"%0A";
-
-mensaje+="Base: "+document.getElementById("base").value+"%0A%0A";
-
-mensaje+="Nombre: "+document.getElementById("nombre").value+"%0A";
-
-mensaje+="Dirección: "+document.getElementById("direccion").value+"%0A";
-
-mensaje+="Torre/Oficina/Apartamento: "+document.getElementById("oficina").value+"%0A";
-
-mensaje+="Teléfono: "+document.getElementById("telefono").value;
-
-window.open("https://wa.me/573128273739?text="+mensaje);
-
-}
-
-</script>
 
 </body>
 </html>
