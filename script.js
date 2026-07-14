@@ -71,6 +71,23 @@ function cambiarCantidad(nombre, cambio) {
 
     if (!producto) return;
 
+    producto.cantidad += cambio;
+
+    if (producto.cantidad < 0) {
+        producto.cantidad = 0;
+    }
+
+    document.getElementById(
+        "cant-" + nombre.replace(/\s+/g, "-")
+    ).textContent = producto.cantidad;
+
+    actualizarCarrito();
+}
+
+    const producto = productos.find(p => p.nombre === nombre);
+
+    if (!producto) return;
+
     if (!producto.cantidad) {
         producto.cantidad = 0;
     }
