@@ -47,21 +47,27 @@ productos = await respuesta.json();
 }
 
 cargarProductos();
-const carrito = {};
-
 function cambiarCantidad(nombre, cambio) {
 
-  if (!carrito[nombre]) carrito[nombre] = 0;
+    const producto = productos.find(p => p.nombre === nombre);
 
-  carrito[nombre] += cambio;
+    if (!producto) return;
 
-  if (carrito[nombre] < 0) carrito[nombre] = 0;
+    if (!producto.cantidad) {
+        producto.cantidad = 0;
+    }
 
-  const id = "cant-" + nombre.replace(/\s+/g,"-");
+    producto.cantidad += cambio;
 
-  document.getElementById(id).textContent = carrito[nombre];
+    if (producto.cantidad < 0) {
+        producto.cantidad = 0;
+    }
 
-  console.log(carrito);
+    const id = "cant-" + nombre.replace(/\s+/g, "-");
+
+    document.getElementById(id).textContent = producto.cantidad;
+
+    actualizarCarrito(productos);
 }
 function actualizarCarrito(productos) {
 
