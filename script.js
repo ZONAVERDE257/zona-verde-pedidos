@@ -1,3 +1,4 @@
+let productos = [];
 async function cargarProductos() {
   const respuesta = await fetch("productos.json");
   const productos = await respuesta.json();
@@ -97,4 +98,4 @@ function actualizarCarrito(productos) {
     total.textContent = "$" + suma.toLocaleString("es-CO");
 
 }
-actualizarCarrito(productos);
+
