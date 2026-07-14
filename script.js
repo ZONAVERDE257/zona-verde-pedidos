@@ -62,3 +62,38 @@ function cambiarCantidad(nombre, cambio) {
 
   console.log(carrito);
 }
+function actualizarCarrito(productos) {
+
+    const lista = document.getElementById("listaCarrito");
+    const total = document.getElementById("total");
+
+    lista.innerHTML = "";
+
+    let suma = 0;
+
+    productos.forEach(producto => {
+
+        if(producto.cantidad > 0){
+
+            const linea = document.createElement("p");
+
+            linea.innerHTML = `
+                ${producto.nombre} x${producto.cantidad}
+                - $${(producto.precio * producto.cantidad).toLocaleString("es-CO")}
+            `;
+
+            lista.appendChild(linea);
+
+            suma += producto.precio * producto.cantidad;
+
+        }
+
+    });
+
+    if(lista.innerHTML === ""){
+        lista.innerHTML = "<p>No has agregado productos.</p>";
+    }
+
+    total.textContent = "$" + suma.toLocaleString("es-CO");
+
+}
