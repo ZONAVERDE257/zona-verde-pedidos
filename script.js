@@ -1,7 +1,7 @@
 let productos = [];
 async function cargarProductos() {
-  const respuesta = await fetch("productos.json");
-  const productos = await respuesta.json();
+const respuesta = await fetch("productos.json");
+productos = await respuesta.json();
 
   const contenedor = document.getElementById("menu");
 
