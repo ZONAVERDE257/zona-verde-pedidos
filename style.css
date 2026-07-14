@@ -113,3 +113,9 @@ footer{
     color:#ddd;
     font-size:20px;
 }
+.logo{
+    width:220px;
+    max-width:90%;
+    display:block;
+    margin:20px auto;
+}
