@@ -2,43 +2,43 @@
   {
     "categoria": "Almuerzos",
     "nombre": "Almuerzo con Salmón",
-    "descripcion": "Base a elección (patacón, puré, arroz de coco, quinua, pasta tomate o pesto), ensalada y salmón.",
+    "descripcion": "Ensalada (mixta o vegetales) y base a elección: patacón, puré, arroz de coco, quinua, pasta en salsa de tomate o pesto.",
     "precio": 35000
   },
   {
     "categoria": "Almuerzos",
     "nombre": "Almuerzo con Atún",
-    "descripcion": "Base a elección, ensalada y atún.",
+    "descripcion": "Ensalada y base a elección.",
     "precio": 37000
   },
   {
     "categoria": "Almuerzos",
     "nombre": "Almuerzo con Chuleta",
-    "descripcion": "Base a elección, ensalada y chuleta.",
+    "descripcion": "Ensalada y base a elección.",
     "precio": 35000
   },
   {
     "categoria": "Almuerzos",
     "nombre": "Almuerzo con Pechuga",
-    "descripcion": "Base a elección, ensalada y pechuga.",
+    "descripcion": "Ensalada y base a elección.",
     "precio": 25000
   },
   {
     "categoria": "Almuerzos",
     "nombre": "Almuerzo con Pollo y Jamón",
-    "descripcion": "Base a elección, ensalada y pollo con jamón.",
+    "descripcion": "Ensalada y base a elección.",
     "precio": 25000
   },
   {
     "categoria": "Bowls",
     "nombre": "Bowl Tropical con Camarones",
-    "descripcion": "Arroz de coco o quinua con camarones, piña, mango, arándanos y verduras.",
+    "descripcion": "Arroz de coco o quinua con piña, mango, arándanos y verduras.",
     "precio": 37000
   },
   {
     "categoria": "Bowls",
     "nombre": "Bowl Tropical con Pollo",
-    "descripcion": "Arroz de coco o quinua con pollo desmechado, piña, mango, arándanos y verduras.",
+    "descripcion": "Arroz de coco o quinua con piña, mango, arándanos y verduras.",
     "precio": 30000
   },
   {
@@ -56,7 +56,7 @@
   {
     "categoria": "Bowls",
     "nombre": "Bowl de Chuleta Ahumada",
-    "descripcion": "Arroz o quinua con chuleta ahumada, maíz tierno, mango y verduras.",
+    "descripcion": "Arroz o quinua con maíz tierno, mango y verduras.",
     "precio": 38000
   },
   {
@@ -67,26 +67,98 @@
   },
   {
     "categoria": "Desayunos",
-    "nombre": "Tostada Integral con Aguacate",
-    "descripcion": "Con huevo cocido y balsámico.",
+    "nombre": "Waffle con Carne Desmechada",
+    "descripcion": "Waffle de almidón de yuca con carne desmechada.",
     "precio": 27000
   },
   {
+    "categoria": "Desayunos",
+    "nombre": "Waffle con Pollo Desmechado",
+    "descripcion": "Waffle de almidón de yuca con pollo desmechado.",
+    "precio": 27000
+  },
+  {
+    "categoria": "Desayunos",
+    "nombre": "Waffle con Huevo Ranchero",
+    "descripcion": "Waffle de almidón de yuca con huevo ranchero.",
+    "precio": 27000
+  },
+  {
+    "categoria": "Desayunos",
+    "nombre": "Omelette con Waffle y Queso Crema",
+    "descripcion": "Omelette acompañado de waffle de almidón de yuca.",
+    "precio": 27000
+  },
+  {
+    "categoria": "Desayunos",
+    "nombre": "Tostada Integral con Aguacate y Huevo Cocido",
+    "descripcion": "Con balsámico.",
+    "precio": 27000
+  },
+  {
+    "categoria": "Desayunos",
+    "nombre": "Tostada Integral con Aguacate, Huevo Ponchado y Tocineta",
+    "descripcion": "Con tocineta crocante.",
+    "precio": 29000
+  },
+  {
     "categoria": "Helados",
-    "nombre": "Waffle de Frutos Rojos",
-    "descripcion": "Con una bola de helado.",
+    "nombre": "Waffle de Frutos Rojos y Helado",
+    "descripcion": "Una bola de helado.",
     "precio": 15000
   },
   {
     "categoria": "Helados",
-    "nombre": "Waffle de Caramelo",
-    "descripcion": "Con una bola de helado.",
+    "nombre": "Waffle de Caramelo y Helado",
+    "descripcion": "Una bola de helado.",
     "precio": 15000
+  },
+  {
+    "categoria": "Helados",
+    "nombre": "Ensalada Especial con Queso y Helado",
+    "descripcion": "Frutas frescas con queso y helado.",
+    "precio": 15000
+  },
+  {
+    "categoria": "Helados",
+    "nombre": "Ensalada Especial con Granola, Queso y Kumis",
+    "descripcion": "Frutas con granola, queso y kumis.",
+    "precio": 15000
+  },
+  {
+    "categoria": "Helados",
+    "nombre": "Fresas Especiales con Queso y Helado",
+    "descripcion": "Fresas frescas.",
+    "precio": 18500
+  },
+  {
+    "categoria": "Helados",
+    "nombre": "Duraznos Especiales con Queso y Helado",
+    "descripcion": "Duraznos frescos.",
+    "precio": 18500
+  },
+  {
+    "categoria": "Helados",
+    "nombre": "Cerezas Especiales con Queso y Helado",
+    "descripcion": "Cerezas frescas.",
+    "precio": 18500
+  },
+  {
+    "categoria": "Helados",
+    "nombre": "Salpicón con Helado y Queso",
+    "descripcion": "Salpicón especial.",
+    "precio": 12500
+  },
+  {
+    "categoria": "Helados",
+    "nombre": "Salpicón con Helado",
+    "descripcion": "Salpicón tradicional.",
+    "precio": 9000
   },
   {
     "categoria": "Helados",
     "nombre": "Malteada",
-    "descripcion": "Sabores disponibles.",
+    "descripcion": "Sabores: vainilla, brownie, natamani, ron con pasas y frutos rojos.",
     "precio": 12000
   }
 ]
