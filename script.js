@@ -104,7 +104,38 @@ function cambiarCantidad(nombre, cambio) {
 
     actualizarCarrito(productos);
 }
-function actualizarCarrito(productos) {
+function actualizarCarrito() {
+
+    const lista = document.getElementById("listaCarrito");
+    const total = document.getElementById("total");
+
+    lista.innerHTML = "";
+
+    let suma = 0;
+
+    productos.forEach(producto => {
+
+        if (producto.cantidad > 0) {
+
+            lista.innerHTML += `
+                <p>
+                    ${producto.nombre}
+                    x${producto.cantidad}
+                    - $${(producto.precio * producto.cantidad).toLocaleString("es-CO")}
+                </p>
+            `;
+
+            suma += producto.precio * producto.cantidad;
+        }
+
+    });
+
+    if (suma === 0) {
+        lista.innerHTML = "<p>No has agregado productos.</p>";
+    }
+
+    total.textContent = "$" + suma.toLocaleString("es-CO");
+}
 
     const lista = document.getElementById("listaCarrito");
     const total = document.getElementById("total");
