@@ -29,7 +29,13 @@ async function cargarProductos() {
             <h3>${p.nombre}</h3>
             <p>${p.descripcion}</p>
             <strong>$${p.precio.toLocaleString("es-CO")}</strong><br><br>
-            <button>🛒 Pedir</button>
+            <div class="controles">
+  <button onclick="cambiarCantidad('${p.nombre}', -1)">➖</button>
+
+  <span id="cant-${p.nombre.replace(/\s+/g,'-')}">0</span>
+
+  <button onclick="cambiarCantidad('${p.nombre}', 1)">➕</button>
+</div>
           </div>
         `).join("")}
       </div>
@@ -40,3 +46,19 @@ async function cargarProductos() {
 }
 
 cargarProductos();
+const carrito = {};
+
+function cambiarCantidad(nombre, cambio) {
+
+  if (!carrito[nombre]) carrito[nombre] = 0;
+
+  carrito[nombre] += cambio;
+
+  if (carrito[nombre] < 0) carrito[nombre] = 0;
+
+  const id = "cant-" + nombre.replace(/\s+/g,"-");
+
+  document.getElementById(id).textContent = carrito[nombre];
+
+  console.log(carrito);
+}
