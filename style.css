@@ -90,3 +90,26 @@ footer{
     color:white;
     margin-top:30px;
 }
+.encabezado{
+    text-align:center;
+    padding:30px;
+    background:#111;
+    color:white;
+}
+
+.logo{
+    width:180px;
+    max-width:90%;
+    margin-bottom:15px;
+}
+
+.encabezado h1{
+    color:#7BC043;
+    font-size:42px;
+    margin:10px 0;
+}
+
+.encabezado p{
+    color:#ddd;
+    font-size:20px;
+}
