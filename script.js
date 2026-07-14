@@ -97,3 +97,4 @@ function actualizarCarrito(productos) {
     total.textContent = "$" + suma.toLocaleString("es-CO");
 
 }
+actualizarCarrito(productos);
